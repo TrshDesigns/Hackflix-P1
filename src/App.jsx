@@ -1,22 +1,29 @@
 import "./App.css";
+
 import pelis from "./assets/json/movies.json";
+
+function MovieCard({ movie }) {
+  return (
+    <div className="movie-card">
+      <h3>{movie.title}</h3>
+      <div className="">
+        <img
+          src={movie.poster_path}
+          alt={movie.title}
+          width="150"
+          className="movie-poster"
+        />
+      </div>
+    </div>
+  );
+}
 
 function App() {
   return (
-    <div className="container mt-4">
-      <div className="row">
-        {pelis.map((peli) => (
-          <div className="col-3" key={peli.id}>
-            <div className="card h-100">
-              <img
-                src={peli.poster_path}
-                className="card-img-top"
-                alt={peli.title}
-              />
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="movies-grid">
+      {pelis.map((movie, index) => (
+        <MovieCard key={movie.id || `${movie.title}-${index}`} movie={movie} />
+      ))}
     </div>
   );
 }
