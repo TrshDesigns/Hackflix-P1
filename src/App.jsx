@@ -1,5 +1,5 @@
 import "./App.css";
-import pelis from "../data.json";
+import pelis from "./assets/json/movies.json";
 
 function App() {
   return (
