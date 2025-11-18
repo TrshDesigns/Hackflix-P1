@@ -1,13 +1,15 @@
 import "./App.css";
 import pelis from "./assets/json/movies.json";
 import MovieCard from "./components/Moviecard";
-import { Rating } from "react-simple-star-rating";
+import Header from "./components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div>
+      <Header></Header>
       <div className="rating-container">
-        <Rating />
       </div>
       <div className="movies-grid">
         {pelis.map((movie, index) => (
