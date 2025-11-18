@@ -1,7 +1,7 @@
 import "./App.css";
 import pelis from "./assets/json/movies.json";
 import MovieCard from "./components/Moviecard";
-import Header from "./components/Navbar";
+import Header from "./components/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
