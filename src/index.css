@@ -1,12 +1,13 @@
-*{
-  background-color: #1a1a1a!important;
+* {
+  background-color: #1a1a1a !important;
 }
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #242424!important;  background-color: #242424!important;
+  background-color: #242424 !important;
+  background-color: #242424 !important;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -35,7 +36,13 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1em;
+  color: #f0ebeb;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
