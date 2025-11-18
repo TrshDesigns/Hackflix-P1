@@ -1,5 +1,3 @@
-import { Rating } from "react-simple-star-rating";
-
 function MovieCard({ movie }) {
   return (
     <div className="movie-card">
@@ -8,7 +6,7 @@ function MovieCard({ movie }) {
         <img
           src={movie.poster_path}
           alt={movie.title}
-          width="150"
+          width="200"
           className="movie-poster"
         />
       </div>
