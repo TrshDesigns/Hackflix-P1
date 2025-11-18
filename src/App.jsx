@@ -1,6 +1,7 @@
 import "./App.css";
 
 import pelis from "./assets/json/movies.json";
+import { Rating } from "react-simple-star-rating";
 
 function MovieCard({ movie }) {
   return (
@@ -20,10 +21,19 @@ function MovieCard({ movie }) {
 
 function App() {
   return (
-    <div className="movies-grid">
-      {pelis.map((movie, index) => (
-        <MovieCard key={movie.id || `${movie.title}-${index}`} movie={movie} />
-      ))}
+    <div>
+      <div className="rating-container">
+        <Rating></Rating>
+      </div>
+      <div className="movies-grid">
+        {pelis.map((movie, index) => (
+          <MovieCard
+            key={movie.id || `${movie.title}-${index}`}
+            movie={movie}
+          />
+        ))}
+        <Rating></Rating>
+      </div>
     </div>
   );
 }
