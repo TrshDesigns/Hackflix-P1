@@ -24,3 +24,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.movie-card {
+  transition: transform 0.3s;
+}
+.movie-card:hover {
+  transform: scale(1.15);
+}
