@@ -11,10 +11,9 @@ function MovieCard({ movie }) {
           width="150"
           className="movie-poster"
         />
-        <Rating></Rating>
       </div>
     </div>
   );
 }
 
-export default MovieCard
+export default MovieCard;
