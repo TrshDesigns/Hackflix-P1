@@ -4,13 +4,11 @@ import MovieCard from "./components/Moviecard";
 import Header from "./components/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function App() {
   return (
     <div>
-      <Header></Header>
-      <div className="rating-container">
-      </div>
+      <Header />
+      <div className="rating-container"></div>
       <div className="movies-grid">
         {pelis.map((movie, index) => (
           <MovieCard
