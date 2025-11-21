@@ -1,4 +1,3 @@
-// Importamos el componente Rating
 import { Rating } from 'react-simple-star-rating';
 
 function MovieCard({ movie }) {

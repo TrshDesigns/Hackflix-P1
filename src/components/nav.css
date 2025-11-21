@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+.navbar-glass {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.351);
+  font-family: 'Orbitron', sans-serif;
+  font-size: large;
+  border-radius: 20px;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-item-glass {
+  color: #ffffffcc !important;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.nav-item-glass:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 8px #c31717;
+}
+
+.btn-glass {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: 0.3s ease;
+}
+
+.btn-glass:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(255, 17, 0, 0.4);
+}

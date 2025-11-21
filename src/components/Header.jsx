@@ -1,6 +1,9 @@
 import { Carousel } from "nuka-carousel";
 import Navbar from "./Navbar";
 
+//PENDIENTE INSERTAR IMAGENES PARA CAROUSEL
+//LEER DOCUMENTACION DE NUKA CAROUSEL
+
 function Header() {
   return (
     <>
@@ -8,9 +11,9 @@ function Header() {
       <Navbar></Navbar>
     </div>
       <Carousel autoplay showDots>
-        <div>Slide 1</div>
-        <div>Slide 2</div>
-        <div>Slide 3</div>
+        <div className="header-carousel-div"></div>
+        <div className="header-carousel-div"></div>
+        <div className="header-carousel-div"></div>
       </Carousel>
     </>
   );
