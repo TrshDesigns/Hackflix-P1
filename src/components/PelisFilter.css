@@ -1,0 +1,49 @@
+
+.rating-container {
+  max-width: 90vw;
+  max-height: 20vh;
+  display: flex;
+  justify-content:start;
+  min-height: 70px;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.filter-section {
+  text-align: center;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.filter-section h5 {
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.star-rating-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.filter-section .btn {
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.filter-section .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.filter-section .text-muted {
+  font-size: 14px;
+  margin-top: 10px;
+}
