@@ -1,8 +1,8 @@
 import "./App.css";
 import pelis from "./assets/json/movies.json";
-import MovieCard from "./components/Moviecard";
+import MovieCard from "./components/MovieCard";
 import Header from "./components/Header";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
