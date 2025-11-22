@@ -10,6 +10,15 @@
   border-radius: 20px;
 }
 
+.nav-container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  top:10px;
+}
+
 .logo-text {
   font-size: 1.4rem;
   font-weight: 700;
