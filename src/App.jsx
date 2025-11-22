@@ -1,14 +1,10 @@
 import { useState } from "react";
 import "./App.css";
 import pelis from "./assets/json/movies.json";
-import MovieCard from "./components/MovieCard";
+import MovieCard from "./components/Moviecard";
 import Header from "./components/Header";
-<<<<<<< HEAD
-import "bootstrap/dist/css/bootstrap.min.css";
-=======
 import PelisFilter from "./components/Pelisfilter";
 import 'bootstrap/dist/css/bootstrap.min.css';
->>>>>>> 0301112 (big commit (header images, filter functionality and more))
 
 function App() {
   // Estado para almacenar el rating seleccionado (0 = todas las películas)
@@ -39,7 +35,6 @@ function App() {
   return (
     <div>
       <Header />
-      <img className="header-image" src="src/media/header003.png"></img>
       
       {/* Componente de filtrado - le pasamos la función para cambiar el rating */}
       <PelisFilter onRatingChange={handleRatingChange} />

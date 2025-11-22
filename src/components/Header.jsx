@@ -1,5 +1,6 @@
 import { Carousel } from "nuka-carousel";
 import Navbar from "./Navbar";
+import "./header.css";
 
 //PENDIENTE INSERTAR IMAGENES PARA CAROUSEL
 //LEER DOCUMENTACION DE NUKA CAROUSEL
@@ -7,14 +8,18 @@ import Navbar from "./Navbar";
 function Header() {
   return (
     <>
-      <div>
-        <Navbar></Navbar>
-      </div>
-      <Carousel autoplay showDots>
-        <div className="header-carousel-div"></div>
-        <div className="header-carousel-div"></div>
-        <div className="header-carousel-div"></div>
-      </Carousel>
+      <header>
+        <div className="header-container">
+          <Navbar></Navbar>
+          <Carousel autoplay showArrows>
+            <img className="carousel-image" src="src/media/header005.png"></img>
+            <img className="carousel-image" src="src/media/header004.png"></img>
+            <img className="carousel-image" src="src/media/header003.png"></img>
+            <img className="carousel-image" src="src/media/header002.png"></img>
+            <img className="carousel-image" src="src/media/header001.png"></img>
+          </Carousel>
+        </div>
+      </header>
     </>
   );
 }
