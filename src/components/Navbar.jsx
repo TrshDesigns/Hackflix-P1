@@ -9,7 +9,7 @@ function Navbar() {
     const newClicks = clicks + 1;
     setClicks(newClicks);
 
-    if (newClicks === 5) {
+    if (newClicks === 2) {
       activarItachi();
       setClicks(0); // reset clics
     }
