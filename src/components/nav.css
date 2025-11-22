@@ -45,3 +45,53 @@
   transform: translateY(-2px);
   box-shadow: 0 0 10px rgba(255, 17, 0, 0.4);
 }
+
+.itachi-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  animation: fadeIn 0.3s ease;
+}
+
+.itachi-img {
+  width: 160px;
+  filter: drop-shadow(0 0 12px red);
+  animation: itachiAppear 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes itachiAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+    filter: drop-shadow(0 0 0px red);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px red);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+}
+
+/* Fade del overlay */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

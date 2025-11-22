@@ -1,6 +1,27 @@
 import "./nav.css";
+import { useState } from "react";
 
 function Navbar() {
+  const [clicks, setClicks] = useState(0);
+  const [showItachi, setShowItachi] = useState(false);
+
+  const handleLogoClick = () => {
+    const newClicks = clicks + 1;
+    setClicks(newClicks);
+
+    if (newClicks === 5) {
+      activarItachi();
+      setClicks(0); // reset clics
+    }
+  };
+
+  const activarItachi = () => {
+    setShowItachi(true);
+
+    setTimeout(() => {
+      setShowItachi(false);
+    }, 1500); // 1.5s de aparición
+  };
   return (
     <>
       <div className="nav-container navbar-glass p-3 text-white">
@@ -13,7 +34,11 @@ function Navbar() {
           </a>
 
           <div className="text-star">
-            <img width="60px" src="src/media/hackflixlogo.png"></img>
+            <img
+              width="60px"
+              src="src/media/hackflixlogo.png"
+              onClick={handleLogoClick}
+            ></img>
           </div>
 
           <ul className="nav col-12 col-lg-auto ms-auto mb-2 justify-content-center mb-md-0">
@@ -44,6 +69,11 @@ function Navbar() {
           </div>
         </div>
       </div>
+      {showItachi && (
+        <div className="itachi-overlay">
+          <img src="src/media/klipartz.com.png" className="itachi-img" />
+        </div>
+      )}
     </>
   );
 }
