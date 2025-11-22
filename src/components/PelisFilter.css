@@ -45,3 +45,8 @@
   font-size: 14px;
   margin-top: 10px;
 }
+#buscar-btn {
+  background-color: #ff0000;
+  color: white;
+  border: solid 1px #ff0000;
+}

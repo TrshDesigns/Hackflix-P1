@@ -23,6 +23,7 @@ function PelisFilter({ onRatingChange }) {
     <div className="rating-container">
       <div className="filter-section">
         <button
+          id="buscar-btn"
           className={`btn ${
             rating === 0 ? "btn-danger" : "btn-outline-danger"
           } m-2`}

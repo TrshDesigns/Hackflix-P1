@@ -56,3 +56,24 @@
 
   box-shadow: 0 0 18px rgba(255, 0, 0, 0.45), 0 12px 25px rgba(0, 0, 0, 0.35);
 }
+.no-pelis-alert {
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 12px;
+
+  /* Glassmorphism */
+  backdrop-filter: blur(10px);
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+
+  /* Glow rojo */
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.btn-danger {
+  color: #fff !important;
+}
