@@ -35,7 +35,7 @@
 }
 
 .movie-card {
-  background: rgba(255, 255, 255, 0.06); /* glass suave */
+  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px);
   border-radius: 14px;
 
@@ -50,10 +50,9 @@
 .movie-card:hover {
   transform: scale(1.08);
 
-  background: rgba(255, 255, 255, 0.1); /* glass un poco más fuerte */
+  background: rgba(255, 255, 255, 0.1);
 
   border: 1px solid rgba(255, 0, 0, 0.35);
 
-  box-shadow: 0 0 18px rgba(255, 0, 0, 0.45),
-    /* glow rojo */ 0 12px 25px rgba(0, 0, 0, 0.35); /* profundidad elegante */
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.45), 0 12px 25px rgba(0, 0, 0, 0.35);
 }
