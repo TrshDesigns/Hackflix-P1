@@ -10,8 +10,8 @@ function Header() {
     <>
       <header>
         <div className="header-container">
-          <Navbar></Navbar>
-          <Carousel autoplay showArrows>
+          <Carousel autoplay showArrows wrapMode="wrap">
+            <Navbar></Navbar>
             <img className="carousel-image" src="src/media/header005.png"></img>
             <img className="carousel-image" src="src/media/header004.png"></img>
             <img className="carousel-image" src="src/media/header003.png"></img>
