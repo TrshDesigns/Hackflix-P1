@@ -86,7 +86,6 @@
   }
 }
 
-/* Fade del overlay */
 @keyframes fadeIn {
   from {
     opacity: 0;

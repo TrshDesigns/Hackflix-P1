@@ -24,7 +24,7 @@ function PelisFilter({ onRatingChange }) {
       <div className="filter-section">
         <button
           className={`btn ${
-            rating === 0 ? "btn-danger" : "btn-outline-primary"
+            rating === 0 ? "btn-danger" : "btn-outline-danger"
           } m-2`}
           onClick={() => {
             setRating(0);
