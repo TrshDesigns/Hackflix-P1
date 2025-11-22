@@ -10,12 +10,14 @@ function Navbar() {
               <svg className="bi me-2" width="40" height="32" role="img"></svg>
             </a>
 
+            <div className="text-star">
+              <button type="button" className="btn btn-outline-light btn-glass me-2">LOGO</button>
+            </div>
+
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="#" className="nav-link px-3 nav-item-glass">Home</a></li>
-              <li><a href="#" className="nav-link px-3 nav-item-glass">Features</a></li>
-              <li><a href="#" className="nav-link px-3 nav-item-glass">Pricing</a></li>
+              <li><a href="#" className="nav-link px-3 nav-item-glass">Bienvenida</a></li>
+              <li><a href="#" className="nav-link px-3 nav-item-glass">Planes</a></li>
               <li><a href="#" className="nav-link px-3 nav-item-glass">FAQs</a></li>
-              <li><a href="#" className="nav-link px-3 nav-item-glass">About</a></li>
             </ul>
 
             <div className="text-end">
