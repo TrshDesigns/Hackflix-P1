@@ -1,6 +1,6 @@
 .rating-container {
   max-width: 100%;
-  max-height: max-content
+  max-height: max-content;
   display: flex;
   justify-content: start;
   min-height: 70px;
