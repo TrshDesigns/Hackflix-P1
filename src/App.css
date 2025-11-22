@@ -33,9 +33,27 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 .movie-card {
-  transition: transform 0.2s;
+  background: rgba(255, 255, 255, 0.06); /* glass suave */
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease,
+    border 0.25s ease;
+
+  padding: 10px;
 }
+
 .movie-card:hover {
   transform: scale(1.08);
+
+  background: rgba(255, 255, 255, 0.1); /* glass un poco más fuerte */
+
+  border: 1px solid rgba(255, 0, 0, 0.35);
+
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.45),
+    /* glow rojo */ 0 12px 25px rgba(0, 0, 0, 0.35); /* profundidad elegante */
 }
