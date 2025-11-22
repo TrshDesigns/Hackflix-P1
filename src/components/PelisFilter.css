@@ -1,9 +1,8 @@
 .rating-container {
   max-width: 100%;
-  max-height: max-content;
+  max-height: 65px;
   display: flex;
   justify-content: start;
-  min-height: 70px;
   border-radius: 15px;
   padding: 10px;
   margin: 20px;
