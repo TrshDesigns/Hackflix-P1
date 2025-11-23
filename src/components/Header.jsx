@@ -7,7 +7,14 @@ function Header() {
     <>
       <header>
         <div className="header-container">
-          <Carousel autoplay autoplayInterval={2000} showArrows wrapMode="wrap">
+          <Carousel
+            showDots
+            autoplay
+            pauseOnHover
+            autoplayInterval={3000}
+            showArrows="hover"
+            wrapMode="wrap"
+          >
             <Navbar></Navbar>
             <img className="carousel-image" src="src/media/header005.png"></img>
             <img className="carousel-image" src="src/media/header004.png"></img>
